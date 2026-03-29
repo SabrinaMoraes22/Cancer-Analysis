@@ -1,0 +1,488 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cancer Gene Expression Analysis - Preview</title>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/highlight.js@11/dist/highlight.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11/styles/atom-one-dark.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .cell {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+            border-radius: 5px;
+        }
+        
+        .markdown-cell {
+            background: white;
+            border-left: 4px solid #27ae60;
+            padding: 20px;
+        }
+        
+        .code-cell {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 20px;
+            border-radius: 5px;
+            overflow-x: auto;
+            font-family: 'Courier New', monospace;
+            font-size: 0.95em;
+        }
+        
+        .code-cell code {
+            color: #ecf0f1;
+        }
+        
+        h1 { font-size: 2em; margin: 20px 0 15px 0; color: #1a1a1a; border-bottom: 3px solid #667eea; padding-bottom: 10px; }
+        h2 { font-size: 1.6em; margin: 18px 0 12px 0; color: #2c3e50; border-bottom: 2px solid #667eea; padding-bottom: 8px; }
+        h3 { font-size: 1.3em; margin: 15px 0 10px 0; color: #34495e; }
+        
+        p { margin: 15px 0; text-align: justify; }
+        
+        ul, ol {
+            margin: 15px 0 15px 30px;
+        }
+        
+        li {
+            margin: 8px 0;
+        }
+        
+        strong {
+            color: #667eea;
+            font-weight: 600;
+        }
+        
+        .hljs {
+            background: #2c3e50 !important;
+            padding: 0;
+        }
+        
+        .footer {
+            background: #f8f9fa;
+            padding: 30px;
+            text-align: center;
+            color: #7f8c8d;
+            border-top: 1px solid #ecf0f1;
+        }
+        
+        .section-counter {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            margin-right: 10px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            background: white;
+        }
+        
+        table thead {
+            background: #667eea;
+            color: white;
+        }
+        
+        table th, table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ecf0f1;
+        }
+        
+        table tbody tr:hover {
+            background: #f5f7fa;
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 { font-size: 1.8em; }
+            .content { padding: 20px; }
+            h1 { font-size: 1.5em; }
+            h2 { font-size: 1.3em; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🧬 Cancer Gene Expression Analysis</h1>
+            <p>A Comprehensive Study of Oncology-Related Gene Expression</p>
+        </div>
+        
+        <div class="content">
+
+            <div class="markdown-cell">
+                
+            </div>
+
+            <div class="markdown-cell">
+                # 🧬 Cancer Gene Expression Analysis
+
+## A Comprehensive Study of Oncology-Related Gene Expression
+
+**Author:** Sabrina Correa de Moraes  
+**Date:** 2025  
+**Language:** Python  
+**Purpose:** Educational and Portfolio
+            </div>
+
+            <div class="markdown-cell">
+                ## Introduction
+
+### What is Gene Expression Analysis?
+
+**Gene expression** refers to the process by which information encoded in DNA is used to synthesize functional gene products, primarily proteins. By analyzing gene expression levels, we can understand which genes are "turned on" or "turned off" in specific cells or tissues.
+
+### Why is it Important in Cancer Research?
+
+Cancer development is fundamentally a disease of altered gene expression. In cancer cells:
+
+- **Oncogenes** (like MYC and EGFR) become overexpressed, promoting uncontrolled cell growth
+- **Tumor suppressor genes** (like TP53, BRCA1, and BRCA2) become downregulated, losing their ability to inhibit cell division
+- **Regulatory genes** (like PTEN) show abnormal expression patterns
+
+By studying these expression patterns, researchers can:
+1. **Identify cancer subtypes** with different molecular signatures
+2. **Predict treatment response** to targeted therapies
+3. **Discover new therapeutic targets** for drug development
+4. **Enable personalized medicine** approaches based on individual tumor profiles
+
+This analysis demonstrates how computational methods can reveal insights into cancer biology.
+            </div>
+
+            <div class="markdown-cell">
+                ## 1. Dataset
+
+This analysis uses a simulated dataset containing expression levels of six oncology-related genes. While these are synthetic values created for educational purposes, they reflect realistic patterns observed in cancer research.
+
+### Dataset Composition
+
+The dataset includes the following cancer-related genes:
+- **TP53**: Tumor suppressor protein (p53)
+- **BRCA1/BRCA2**: Breast cancer susceptibility genes
+- **EGFR**: Epidermal growth factor receptor
+- **MYC**: Myelocytomatosis oncogene
+- **PTEN**: Phosphatase and tensin homolog
+
+Each gene has an associated expression level (relative quantification units).
+            </div>
+
+            <div class="code-cell">
+                <code># Import required libraries
+import pandas as pd
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Load the dataset: Gene expression data related to cancer
+# These are simulated values representing relative expression levels
+data = {
+    &#x27;Gene&#x27;: [&#x27;TP53&#x27;, &#x27;BRCA1&#x27;, &#x27;BRCA2&#x27;, &#x27;EGFR&#x27;, &#x27;MYC&#x27;, &#x27;PTEN&#x27;],
+    &#x27;Expression&#x27;: [8.5, 2.1, 3.0, 7.2, 6.8, 4.5]
+}
+
+# Create a pandas DataFrame from the data
+df = pd.DataFrame(data)
+
+# Display the raw data
+print(&quot;=&quot; * 50)
+print(&quot;GENE EXPRESSION DATASET&quot;)
+print(&quot;=&quot; * 50)
+print(&quot;\nRaw Data:&quot;)
+display(df)</code>
+            </div>
+
+            <div class="markdown-cell">
+                ## 2. Gene Description
+
+Understanding the biological function of each gene is crucial for interpreting expression data in cancer context. Below is a detailed description of the genes analyzed in this study:
+
+### TP53 - Tumor Protein 53 (The "Guardian of the Genome")
+- **Function**: Acts as a tumor suppressor by regulating cell cycle, promoting DNA repair, and inducing apoptosis (cell death) when damage is detected
+- **Role in Cancer**: Mutations in TP53 are found in ~50% of human cancers. Loss of function leads to uncontrolled cell proliferation
+- **Clinical Relevance**: High TP53 expression in normal cells is protective; loss of expression increases cancer risk
+
+### BRCA1 and BRCA2 - Breast Cancer Susceptibility Genes
+- **Function**: Involved in DNA repair mechanisms, specifically homologous recombination repair
+- **Role in Cancer**: Inherited mutations in BRCA1/BRCA2 significantly increase risk of breast and ovarian cancer
+- **Clinical Relevance**: These genes are frequently downregulated or mutated in hereditary breast cancers; genetic testing is standard for at-risk families
+
+### EGFR - Epidermal Growth Factor Receptor
+- **Function**: A receptor tyrosine kinase that promotes cell division, differentiation, and survival in response to growth factors
+- **Role in Cancer**: Overexpression or mutation leads to constant growth signals, even without external stimulation (constitutive activation)
+- **Clinical Relevance**: EGFR is a major therapeutic target in lung cancer, breast cancer, and colorectal cancer treatments
+
+### MYC - v-Myc Avian Myelocytomatosis Viral Oncogene Homolog
+- **Function**: A transcription factor that regulates cell proliferation, growth, and metabolism
+- **Role in Cancer**: Amplification or overexpression is associated with rapid cell division and oncogenic transformation
+- **Clinical Relevance**: MYC deregulation is found in many cancer types (lymphomas, carcinomas); high expression correlates with aggressive tumors
+
+### PTEN - Phosphatase and Tensin Homolog
+- **Function**: A tumor suppressor phosphatase that negatively regulates the PI3K/AKT signaling pathway, inhibiting cell growth and promoting apoptosis
+- **Role in Cancer**: Loss of PTEN function removes growth inhibition signals, leading to uncontrolled proliferation
+- **Clinical Relevance**: PTEN is frequently lost in various cancers; its loss is associated with poor prognosis and resistance to some therapies
+            </div>
+
+            <div class="markdown-cell">
+                ## 3. Data Analysis
+
+This section performs exploratory data analysis (EDA) to understand the statistical properties and patterns in gene expression levels.
+            </div>
+
+            <div class="code-cell">
+                <code># Statistical summary of gene expression data
+print(&quot;\n&quot; + &quot;=&quot; * 50)
+print(&quot;STATISTICAL SUMMARY&quot;)
+print(&quot;=&quot; * 50)
+print(&quot;\nDescriptive Statistics for Expression Levels:&quot;)
+print(df[&#x27;Expression&#x27;].describe())
+
+# Calculate additional statistics
+print(f&quot;\nRange (Max - Min): {df[&#x27;Expression&#x27;].max() - df[&#x27;Expression&#x27;].min():.2f}&quot;)
+print(f&quot;Median: {df[&#x27;Expression&#x27;].median():.2f}&quot;)
+print(f&quot;Standard Deviation: {df[&#x27;Expression&#x27;].std():.2f}&quot;)
+
+# Identify the gene with the highest expression level
+max_expression_idx = df[&#x27;Expression&#x27;].idxmax()
+gene_with_max_expression = df.loc[max_expression_idx, &#x27;Gene&#x27;]
+max_expression_value = df.loc[max_expression_idx, &#x27;Expression&#x27;]
+
+print(&quot;\n&quot; + &quot;=&quot; * 50)
+print(&quot;KEY FINDING: HIGHEST EXPRESSED GENE&quot;)
+print(&quot;=&quot; * 50)
+print(f&quot;\nGene: {gene_with_max_expression}&quot;)
+print(f&quot;Expression Level: {max_expression_value:.2f}&quot;)
+
+# Identify the gene with the lowest expression level
+min_expression_idx = df[&#x27;Expression&#x27;].idxmin()
+gene_with_min_expression = df.loc[min_expression_idx, &#x27;Gene&#x27;]
+min_expression_value = df.loc[min_expression_idx, &#x27;Expression&#x27;]
+
+print(&quot;\n&quot; + &quot;=&quot; * 50)
+print(&quot;KEY FINDING: LOWEST EXPRESSED GENE&quot;)
+print(&quot;=&quot; * 50)
+print(f&quot;\nGene: {gene_with_min_expression}&quot;)
+print(f&quot;Expression Level: {min_expression_value:.2f}&quot;)
+
+# Sort genes by expression level
+print(&quot;\n&quot; + &quot;=&quot; * 50)
+print(&quot;GENES RANKED BY EXPRESSION LEVEL (Highest to Lowest)&quot;)
+print(&quot;=&quot; * 50)
+df_sorted = df.sort_values(by=&#x27;Expression&#x27;, ascending=False).reset_index(drop=True)
+print(&quot;\n&quot;)
+display(df_sorted)</code>
+            </div>
+
+            <div class="markdown-cell">
+                ## 4. Visualization
+
+A visual representation of gene expression levels facilitates quick identification of patterns and comparative analysis between genes.
+            </div>
+
+            <div class="code-cell">
+                <code># Create a professional bar chart for gene expression visualization
+fig, ax = plt.subplots(figsize=(12, 6))
+
+# Define a soft and professional color palette (shades of blue/teal gradient)
+colors = [&#x27;#5B8DBE&#x27;, &#x27;#7FA3D0&#x27;, &#x27;#A0B9DD&#x27;, &#x27;#B8C9E8&#x27;, &#x27;#D0D9F0&#x27;, &#x27;#E8EEF7&#x27;]
+
+# Create the bar chart with sorted data (highest to lowest expression)
+df_sorted = df.sort_values(by=&#x27;Expression&#x27;, ascending=False)
+bars = ax.bar(df_sorted[&#x27;Gene&#x27;], df_sorted[&#x27;Expression&#x27;], color=colors, 
+              edgecolor=&#x27;#3D5A80&#x27;, linewidth=1.5, alpha=0.85)
+
+# Customize the plot appearance
+ax.set_xlabel(&#x27;Gene&#x27;, fontsize=13, fontweight=&#x27;bold&#x27;, color=&#x27;#1F3A5F&#x27;)
+ax.set_ylabel(&#x27;Expression Level (a.u.)&#x27;, fontsize=13, fontweight=&#x27;bold&#x27;, color=&#x27;#1F3A5F&#x27;)
+ax.set_title(&#x27;Cancer-Related Gene Expression Analysis&#x27;, 
+             fontsize=15, fontweight=&#x27;bold&#x27;, color=&#x27;#1F3A5F&#x27;, pad=20)
+
+# Rotate x-axis labels for better readability
+ax.set_xticklabels(df_sorted[&#x27;Gene&#x27;], rotation=45, ha=&#x27;right&#x27;, fontsize=11)
+ax.tick_params(axis=&#x27;y&#x27;, labelsize=11, colors=&#x27;#1F3A5F&#x27;)
+
+# Add a subtle grid for easier value reading
+ax.grid(axis=&#x27;y&#x27;, linestyle=&#x27;--&#x27;, alpha=0.3, color=&#x27;#CCCCCC&#x27;, linewidth=0.8)
+ax.set_axisbelow(True)
+
+# Add value labels on top of each bar for clarity
+for bar in bars:
+    height = bar.get_height()
+    ax.text(bar.get_x() + bar.get_width()/2., height,
+            f&#x27;{height:.1f}&#x27;,
+            ha=&#x27;center&#x27;, va=&#x27;bottom&#x27;, fontsize=10, fontweight=&#x27;bold&#x27;, color=&#x27;#1F3A5F&#x27;)
+
+# Improve layout to prevent label cutoff
+plt.tight_layout()
+
+# Display the chart
+plt.show()
+
+print(&quot;\n✓ Visualization complete!&quot;)</code>
+            </div>
+
+            <div class="markdown-cell">
+                ## 5. Results and Interpretation
+
+### Key Findings from Gene Expression Analysis
+
+#### High Expression Genes (Potential Oncogenic Drivers)
+
+**1. TP53 (8.5 - Highest Expression)**
+- While TP53 is a tumor suppressor and typically should be maintained at normal levels, high expression in specific contexts can indicate cellular stress response
+- The elevated expression could reflect cells attempting to activate protective mechanisms against oncogenic transformation
+- In cancer cells with TP53 mutations, the cell cannot respond properly to this signal, leading to uncontrolled proliferation
+
+**2. EGFR (7.2 - Second Highest)**
+- High EGFR expression is characteristic of many cancers and drives cell proliferation through growth factor signaling
+- This expression level would promote increased cell division and survival signals
+- Explains why EGFR is a primary therapeutic target in oncology (e.g., kinase inhibitors, monoclonal antibodies)
+
+**3. MYC (6.8)**
+- Elevated MYC expression drives aggressive cell growth and proliferation
+- Associated with enhanced metabolic activity and rapid cell division
+- Commonly overexpressed in lymphomas and other high-grade malignancies
+
+#### Low Expression Genes (Potential Tumor Suppressors)
+
+**4. PTEN (4.5)**
+- Moderate expression provides some growth-inhibitory signaling
+- Even small reductions in PTEN expression can lead to PI3K/AKT pathway hyperactivation
+
+**5. BRCA2 (3.0) and BRCA1 (2.1 - Lowest Expression)**
+- Low expression of these DNA repair genes significantly compromises genomic stability
+- Increases mutation accumulation and genomic instability
+- Creates a "mutator phenotype" where cancer cells can evolve rapidly to escape therapeutic interventions
+- Explains increased cancer risk in carriers of BRCA mutations
+
+### Clinical Implications
+
+The expression pattern observed in this analysis reflects a **genetic profile characteristic of aggressive malignancies**, where:
+- **Oncogenic drivers** (EGFR, MYC) are overactive, promoting proliferation
+- **DNA repair capacity** (BRCA1/BRCA2) is compromised, allowing mutations to accumulate
+- **Tumor suppressive signals** are present but may be functionally impaired through mutations or signaling defects
+
+This profile suggests potential therapeutic opportunities:
+1. **EGFR inhibition** - blocking growth signals
+2. **MYC targeting** - reducing proliferation drivers
+3. **Synthetic lethality approaches** - exploiting BRCA deficiency
+4. **PTEN pathway modulation** - restoring growth inhibition
+            </div>
+
+            <div class="markdown-cell">
+                ## 6. Conclusion
+
+### Summary of Findings
+
+This analysis has demonstrated the power of computational approaches to analyze gene expression patterns in cancer. By examining a focused set of oncology-relevant genes, we identified:
+
+1. **Distinct expression signatures** reflecting both oncogenic activation and tumor suppressor dysfunction
+2. **Clear patterns** consistent with aggressive cancer phenotypes
+3. **Potential therapeutic targets** that could be exploited for treatment strategies
+
+### Bioinformatics and Personalized Medicine
+
+Gene expression analysis represents one of the fundamental pillars of modern bioinformatics and precision oncology:
+
+- **Personalized Treatment**: By profiling tumor gene expression, clinicians can now match patients to the most effective therapeutic options, moving away from one-size-fits-all approaches
+- **Prognostic Value**: Gene expression signatures are powerful predictors of patient outcomes and can guide treatment intensification or de-escalation
+- **Drug Discovery**: Identifying genes that drive cancer growth enables the discovery and development of targeted therapeutics
+- **Mechanistic Understanding**: Understanding changes in gene expression reveals the biological mechanisms underlying cancer development and therapy resistance
+
+### Future Directions
+
+This simple analysis can be extended to:
+- Integration of RNA-seq data from actual tumor samples
+- Analysis of survival correlations with expression levels
+- Classification of cancer subtypes based on expression profiles
+- Identification of novel biomarkers for early detection or therapy response
+- Systems-level analysis of gene regulatory networks in cancer
+
+### Conclusion
+
+Gene expression analysis exemplifies how computational methods and bioinformatics tools can extract meaningful biological insights from data. As high-throughput sequencing technologies continue to advance and become more accessible, such analyses will increasingly enable precision medicine approaches that improve cancer patient outcomes through tailored, evidence-based treatment selection.
+
+---
+
+**Keywords**: Gene Expression | Cancer Biology | Bioinformatics | Precision Medicine | Oncology | Personalized Medicine
+
+*This analysis was conducted for educational and portfolio purposes to demonstrate fundamental principles of cancer genomics and computational biology.*
+            </div>
+
+        </div>
+        
+        <div class="footer">
+            <p>📊 Biomedical Analysis Project | Educational and Portfolio Purpose</p>
+            <p style="margin-top: 10px; font-size: 0.9em;">Generated from Jupyter Notebook - Cancer Gene Expression Analysis</p>
+        </div>
+    </div>
+    
+    <script>
+        // Apply markdown rendering
+        document.querySelectorAll('.markdown-cell').forEach(cell => {
+            let md = cell.innerHTML;
+            cell.innerHTML = marked.parse(md);
+        });
+        
+        // Highlight code
+        document.querySelectorAll('.code-cell code').forEach(block => {
+            let lang = 'python';
+            block.className = 'language-python';
+            try {
+                hljs.highlightElement(block);
+            } catch(e) {}
+        });
+    </script>
+</body>
+</html>
