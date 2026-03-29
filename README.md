@@ -142,7 +142,7 @@ This is an educational project. For suggestions or improvements, feel free to op
 
 ## 📌 Version History
 
-- **v1.0** (2025) - Initial release with gene expression analysis
+- **v1.0** (2026) - Initial release with gene expression analysis
 
 ---
 
